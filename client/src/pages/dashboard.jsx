@@ -129,8 +129,15 @@ const Dashboard = () => {
   };
 
   const handleCreateTask = () => {
-    navigate('/create-task'); // Navigate to the Create Task page
+    navigate('/Createtask'); // Navigate to the Create Task page
   };
+
+  <button
+  onClick={handleCreateTask}
+  className="bg-blue-500 text-white px-4 py-2 rounded"
+>
+  Go to Create Task
+</button>
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -144,18 +151,7 @@ const Dashboard = () => {
                 {/* Logo or Site Name */}
                 <span className="text-2xl font-bold text-[#e25647]">Taskit</span>
               </div>
-              {/* Navigation Links */}
-              <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
-                <a
-                  href="#"
-                  className="border-[#e25647] text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                >
-                  Dashboard
-                </a>
-                {/* Add more navigation links as needed */}
-              </div>
             </div>
-            {/* Right Side */}
             <div className="flex items-center">
               <button
                 onClick={handleLogout}
